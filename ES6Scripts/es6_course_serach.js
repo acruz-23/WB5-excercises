@@ -35,11 +35,11 @@ let courses = [
     Fee: "50.00",
   },
 ];
-function findProg200Start(courses) {
+function findProg200(courses) {
   return courses.CourseId === "PROG200";
 }
 function findPROJ500(courses) {
-  return (courses.CourseId = "PROJ500");
+  return courses.CourseId === "PROJ500";
 }
 function coursesLessThan50(courses) {
   return +courses.Fee <= 50;
@@ -49,7 +49,7 @@ function coursesinClassroom1(courses) {
   return courses.Location === "Classroom 1";
 }
 
-let prog200 = courses.find(findProg200Start);
+let prog200 = courses.find(findProg200);
 console.log("Prog200 Start date:", prog200.StartDate);
 
 let proj500 = courses.find(findPROJ500);

@@ -81,6 +81,7 @@ console.log("Capacity of at least 6:");
 const canHoldAtLeastSix = vehicles.filter((vehicle) => vehicle.capacity >= 6);
 canHoldAtLeastSix.forEach((vehicle) => console.log(vehicle.licenseNo));
 console.log("-".repeat(30));
+
 console.log("Tag ends with 222:");
 const tagEndsWith222 = vehicles.filter((vehicle) =>
   vehicle.licenseNo.endsWith("222")

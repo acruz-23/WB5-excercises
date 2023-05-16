@@ -18,9 +18,9 @@ let menu = [
     { item: "Lasagna", price: 5.29 },
   ],
 ];
-let meal = 0;
+let meal = 2;
 if (meal === 0) console.log("Breakfast Menu");
 else if (meal === 1) console.log("Lunch Menu");
 else console.log("Dinner Menu");
 menu[meal].forEach((item) => console.log(item.item, "$" + item.price));
-console.log("_".repeat(30));
+console.log("-".repeat(30));

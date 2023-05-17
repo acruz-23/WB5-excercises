@@ -1,0 +1,12 @@
+// let objSet1 = document.querySelectorAll("p");
+// all paragraph elements
+// let objSet2 = document.querySelectorAll(".attn");
+// all elements with class attn
+// let objSet3 = document.querySelectorAll("p.attn");
+// all paragraphs with class attn
+// let objSet4 = document.querySelectorAll("img[alt]");
+// all img tags with an alt attribute
+// let objSet4 = document.querySelectorAll("div > p");
+// all paragraph elements that are descendants of divs
+// let objSet5 = document.querySelectorAll("div, span")
+// all div and span elements

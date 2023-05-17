@@ -14,38 +14,34 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <h1>Animal Image Generator</h1>
       <div class="row">
         <div class="col-md-6">
           <label for="imgDropdown">Choose an image category:</label>
           <select class="form-select" name="images" id="imgDropdown"></select>
         </div>
-        <div class="row mt-3">
-          <div class="col-xs-3">
-            <button
-              class="btn btn-primary"
-              type="button"
-              id="imageGeneratorBtn"
-            >
-              Generate Image
-            </button>
-            <button
-              class="btn btn-primary mx-3"
-              type="button"
-              id="galleryResetBtn"
-            >
-              Reset Gallery
-            </button>
-          </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-xs-3">
+          <button class="btn btn-primary" type="button" id="imageGeneratorBtn">
+            Generate Image
+          </button>
+          <button
+            class="btn btn-primary mx-3"
+            type="button"
+            id="galleryResetBtn"
+          >
+            Reset Gallery
+          </button>
         </div>
-        <div class="row mt-3">
-          <hr />
-          <div class="col-12">
-            <div id="gallery"></div>
-          </div>
-          <hr />
+      </div>
+      <div class="row mt-3">
+        <hr />
+        <div class="col-12">
+          <div id="gallery"></div>
         </div>
+        <hr />
       </div>
     </div>
 

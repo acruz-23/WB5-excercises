@@ -1,5 +1,9 @@
 let imageFiles = [
   {
+    name: "https://loremflickr.com/320/240/animal",
+    description: "Wildcard",
+  },
+  {
     name: "https://loremflickr.com/320/240/dog",
     description: "A cute dog",
   },
@@ -40,23 +44,19 @@ imageFiles.forEach((object) => {
 imageGeneratorBtnEl.onclick = () => {
   console.log("imageGenerator start");
   const selectedImg = imgDropdownEl.value;
-  if (selectedImg === "select") {
-    alert("Please Choose a Category");
-    return;
-  } else {
-    imageFiles.forEach((object) => {
-      if (object.description === selectedImg) {
-        const newImage = new Image();
-        const randomSrc = object.name + "?random=" + i;
-        newImage.src = randomSrc;
-        newImage.alt = object.description;
-        imgGalleryEl.appendChild(newImage);
-        i++;
-        console.log(i);
-        return;
-      }
-    });
-  }
+
+  imageFiles.forEach((object) => {
+    if (object.description === selectedImg) {
+      const newImage = new Image();
+      const randomSrc = object.name + "?random=" + i;
+      newImage.src = randomSrc;
+      newImage.alt = object.description;
+      imgGalleryEl.appendChild(newImage);
+      i++;
+      console.log(i);
+      return;
+    }
+  });
 };
 
 //Reset Gallery

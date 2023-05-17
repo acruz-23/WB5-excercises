@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script>
+      window.onload = () => {
+        const paragraphELArray = Array.from(document.getElementsByTagName("p"));
+        paragraphELArray.forEach(
+          (element) => (element.style.border = "thin solid black")
+        );
+        const imgEls = document.getElementsByTagName("img");
+        Array.from(imgEls).forEach((element) => {
+          element.classList.add("roundedImg");
+          element.src = "https://loremflickr.com/320/240/kitten";
+          element.alt = "kitten image of the day.";
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <img src="" />
+      <p>
+        Lake lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+        magnam iste, totam sequi tenetur laborum sit? Voluptates a commodi, id
+        minus quidem, rem omnis architecto repudiandae qui distinctio asperiores
+        assumenda.
+      </p>
+    </div>
+    <div>
+      <img src="" />
+      <p>
+        Globe lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+        magnam iste, totam sequi tenetur laborum sit? Voluptates a commodi, id
+        minus quidem, rem omnis architecto repudiandae qui distinctio asperiores
+        assumenda.
+      </p>
+    </div>
+    <div>
+      <img src="" />
+      <p>
+        Logo lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+        magnam iste, totam sequi tenetur laborum sit? Voluptates a commodi, id
+        minus quidem, rem omnis architecto repudiandae qui distinctio asperiores
+        assumenda.
+      </p>
+    </div>
+  </body>
+</html>

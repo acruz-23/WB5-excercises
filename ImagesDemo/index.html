@@ -13,10 +13,12 @@
           (element) => (element.style.border = "thin solid black")
         );
         const imgEls = document.getElementsByTagName("img");
-        Array.from(imgEls).forEach((element) => {
+
+        // let array = [1,2,3,4];
+        Array.from(imgEls).forEach((element, i) => {
           element.classList.add("roundedImg");
-          element.src = "https://loremflickr.com/320/240/kitten";
-          element.alt = "kitten image of the day.";
+          element.src = "https://loremflickr.com/320/240/reptiles";
+          element.alt = `Rotated Rounded Image ${i + 1}`;
         });
       };
     </script>

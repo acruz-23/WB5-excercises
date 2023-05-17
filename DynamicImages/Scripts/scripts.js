@@ -27,6 +27,8 @@ const imgGalleryEl = document.getElementById("gallery");
 //Btn El
 const imageGeneratorBtnEl = document.getElementById("imageGeneratorBtn");
 const galleryResetBtnEl = document.getElementById("galleryResetBtn");
+//global counter
+let i = 0;
 
 //populate Dropdown
 imageFiles.forEach((object) => {
@@ -45,9 +47,12 @@ imageGeneratorBtnEl.onclick = () => {
     imageFiles.forEach((object) => {
       if (object.description === selectedImg) {
         const newImage = new Image();
-        newImage.src = object.name;
+        const randomSrc = object.name + "?random=" + i;
+        newImage.src = randomSrc;
         newImage.alt = object.description;
         imgGalleryEl.appendChild(newImage);
+        i++;
+        console.log(i);
         return;
       }
     });

@@ -1,5 +1,12 @@
 img {
+   
     margin: .5em;
     border: 2px solid black;
     box-shadow: 5px 2px 5px gray;
+}
+#gallery {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }

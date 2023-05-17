@@ -14,22 +14,41 @@
     />
   </head>
   <body>
-    <h1>Animal Image Generator</h1>
-    <label for="imgDropdown">Choose an image category:</label>
-    <select class="form-select" name="images" id="imgDropdown"></select
-    ><br /><br />
-    <div class="btns">
-      <button class="btn btn-primary" type="button" id="imageGeneratorBtn">
-        Generate Image
-      </button>
-      <button class="btn btn-primary" type="button" id="galleryResetBtn">
-        Reset Gallery
-      </button>
+    <div class="container">
+      <h1>Animal Image Generator</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="imgDropdown">Choose an image category:</label>
+          <select class="form-select" name="images" id="imgDropdown"></select>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xs-3">
+            <button
+              class="btn btn-primary"
+              type="button"
+              id="imageGeneratorBtn"
+            >
+              Generate Image
+            </button>
+            <button
+              class="btn btn-primary mx-3"
+              type="button"
+              id="galleryResetBtn"
+            >
+              Reset Gallery
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <hr />
+          <div class="col-12">
+            <div id="gallery"></div>
+          </div>
+          <hr />
+        </div>
+      </div>
     </div>
-    <hr />
 
-    <div id="gallery"></div>
-    <hr />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

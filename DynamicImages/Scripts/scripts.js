@@ -23,13 +23,17 @@ let imageFiles = [
     name: "https://loremflickr.com/320/240/reptile",
     description: "A fearsome reptile",
   },
+  {
+    name: "https://loremflickr.com/320/240/bear",
+    description: "BEAR!!!",
+  },
 ];
 //Page El
 const imgDropdownEl = document.getElementById("imgDropdown");
 const imgGalleryEl = document.getElementById("gallery");
 //Btn El
-const imageGeneratorBtnEl = document.getElementById("imageGeneratorBtn");
-const galleryResetBtnEl = document.getElementById("galleryResetBtn");
+const imageGeneratorBtn = document.getElementById("imageGeneratorBtn");
+const galleryResetBtn = document.getElementById("galleryResetBtn");
 //global counter
 let i = 0;
 
@@ -40,7 +44,7 @@ imageFiles.forEach((object) => {
 });
 
 //populate gallery
-imageGeneratorBtnEl.onclick = () => {
+imageGeneratorBtn.onclick = () => {
   const selectedValue = imgDropdownEl.value;
 
   const selectedImage = imageFiles.find(
@@ -56,7 +60,7 @@ imageGeneratorBtnEl.onclick = () => {
 };
 
 //Reset Gallery
-galleryResetBtnEl.onclick = () => {
+galleryResetBtn.onclick = () => {
   const allImages = document.getElementsByTagName("img");
   Array.from(allImages).forEach((imgEl) => imgGalleryEl.removeChild(imgEl));
 };
